@@ -1,6 +1,6 @@
 # High-fidelity and High-efficiency Talking Portrait Synthesis with Detail-aware Neural Radiance Fields
 
-This repository provides a PyTorch implementation for the paper: [High-fidelity and High-efficiency Talking Portrait Synthesis with Detail-aware Neural Radiance Fields](https://arxiv.org/abs/2211.12368).
+This repository provides a PyTorch implementation for the paper: High-fidelity and High-efficiency Talking Portrait Synthesis with Detail-aware Neural Radiance Fields.
 
 
 A **self-driven** generated video of our method:
@@ -20,9 +20,6 @@ cd HHNeRF
 
 ### Install dependency
 ```bash
-# for ubuntu, portaudio is needed for pyaudio to work.
-sudo apt install portaudio19-dev
-
 pip install -r requirements.txt
 ```
 
@@ -41,7 +38,7 @@ We provide some HR videos in 900 * 900 resolution. In data preprocessing, please
     ├──hr_imgs # HR ground truth frames (static background)
     │  ├──0.jpg
     │  ├──...
-    ├──eye_features # eye pathes and features
+    ├──eye_features # eye patches and features
     │  ├──0_l.png # left eye
     │  ├──0_r.png # right eye
     │  ├──0.pt # eye feature
