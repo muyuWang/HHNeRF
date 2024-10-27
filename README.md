@@ -3,9 +3,11 @@
 This repository provides a PyTorch implementation for the paper: [High-fidelity and High-efficiency Talking Portrait Synthesis with Detail-aware Neural Radiance Fields](https://arxiv.org/abs/2211.12368).
 
 
-A GUI for easy visualization:
+A **self-driven** generated video of our method:
+[here](./results/Cameron.mp4)
 
-https://user-images.githubusercontent.com/25863658/201629660-7ada624b-8602-4cfe-96b3-61e3d465ced6.mp4
+A **cross-driven** generated video of our method:
+[here](./results/Sunak.mp4)
 
 # Installation
 
@@ -26,7 +28,7 @@ pip install -r requirements.txt
 
 # Data pre-processing
 Our data preprocessing method follows previous work [AD-NeRF](https://github.com/YudongGuo/AD-NeRF), [SSP-NeRF](https://github.com/alvinliu0/SSP-NeRF) and [RAD-NeRF](https://github.com/ashawkey/RAD-NeRF/tree/main).
-We privode some HR videos in 900 * 900 resolution. In data preprocessing, please downsample them to 450 * 450. Then use the downsampled frames to perform data preprocessing in [RAD-NeRF](https://github.com/ashawkey/RAD-NeRF/tree/main) (extract images, detect lands,  face parsing, extract background, estimate head pose ...). With the extracted landmarks, extract patches from the eye region and then utilize a ResNet model to extract their features. 
+We provide some HR videos in 900 * 900 resolution. In data preprocessing, please downsample them to 450 * 450. Then use the downsampled frames to perform data preprocessing in [RAD-NeRF](https://github.com/ashawkey/RAD-NeRF/tree/main) (extract images, detect lands,  face parsing, extract background, estimate head pose ...). With the extracted landmarks, extract patches from the eye region and then utilize a ResNet model to extract their features. 
 
 * Finally, file structure after finishing all steps:
     ```bash
@@ -61,7 +63,7 @@ We privode some HR videos in 900 * 900 resolution. In data preprocessing, please
     ├──transforms_val.json # head poses (test split)
     ```
 
-Some processed data can be download at. 
+Some HR talking videos and processed data can be downloaded at [baidudisk](https://pan.baidu.com/s/1iR5Q3xJ2n3KYfKS9XPoA8Q?pwd=hy7i). 
 
 # Usage
 
