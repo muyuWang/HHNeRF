@@ -966,18 +966,6 @@ class Trainer(object):
             loss_pcp, loss_style = self.cri_perceptual(pred_sr, rgb_hr)
             loss += loss_pcp
             loss += loss_style
-            import pdb
-            pdb.set_trace()           
-            if torch.isnan(loss_pcp).any() or torch.isinf(loss_pcp).any():
-                if torch.isnan(loss_pcp).any(): print('******Nan in loss_pcp******')
-                else: print('******Inf in loss_pcp******')
-                torch.save((pred_sr, rgb_hr), 'tensors.pth')
-                exit()
-            if torch.isnan(loss_style).any() or torch.isinf(loss_style).any():
-                if torch.isnan(loss_style).any(): print('******Nan in loss_style******')
-                else: print('******Inf in loss_style******')
-                torch.save((pred_sr, rgb_hr), 'tensors.pth')
-                exit()
             
             #GANLoss
             if self.opt.weight_gan > 0:
