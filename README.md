@@ -1,6 +1,6 @@
 # High-fidelity and High-efficiency Talking Portrait Synthesis with Detail-aware Neural Radiance Fields
 
-This repository provides a PyTorch implementation for the paper: High-fidelity and High-efficiency Talking Portrait Synthesis with Detail-aware Neural Radiance Fields.
+This repository provides a PyTorch implementation for the paper: High-fidelity and High-efficiency Talking Portrait Synthesis with Detail-aware Neural Radiance Fields. (on TVCG2024, Manuscript DOI: 10.1109/TVCG.2024.3488960)
 
 
 A **self-driven** generated video of our method:
